@@ -1,0 +1,25 @@
+body { margin: 0; font-family: Arial, sans-serif; }
+.app { min-height: 100vh; transition: 0.3s; }
+.app.light { background: #f4f6f8; color: #222; }
+.app.dark { background: #1e1e2f; color: #f1f1f1; }
+
+.header { padding: 20px; text-align: center; background: #4a6cf7; color: white; }
+.header-buttons button { margin: 5px; }
+button { padding: 8px 14px; border: none; border-radius: 6px; background: #222; color: #fff; cursor: pointer; }
+button:hover { opacity: 0.85; }
+
+.navbar { background: #333; }
+.navbar ul { display: flex; justify-content: center; gap: 24px; list-style: none; margin: 0; padding: 12px; }
+.navbar a { color: white; text-decoration: none; }
+
+main { max-width: 900px; margin: auto; padding: 20px; }
+.search-bar { display: flex; gap: 8px; margin-bottom: 20px; }
+.search-bar input, .form input { padding: 8px; border-radius: 6px; border: 1px solid #aaa; flex: 1; }
+
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+.card { padding: 16px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.2); background: rgba(255,255,255,0.08); border: 1px solid #8884; }
+
+.course-list li { padding: 6px 0; }
+.form { display: flex; flex-direction: column; gap: 10px; margin-top: 20px; }
+.notice { margin-top: 20px; font-style: italic; }
+.footer { text-align: center; padding: 15px; background: #333; color: white; margin-top: 30px; }
