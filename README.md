@@ -2,11 +2,6 @@
 
 A responsive dashboard built with **React** to manage student information, courses, and registrations. Developed as an individual practical lab to practice core React concepts.
 
-## 🎬 Demo
-
-![Light Mode](./screenshots/light.png)
-![Dark Mode](./screenshots/dark.png)
-
 ## ✨ Features
 
 - **Header & Navbar:** reusable components with navigation links
