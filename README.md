@@ -1,16 +1,80 @@
-# React + Vite
+# 🎓 Student Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive dashboard built with **React** to manage student information, courses, and registrations. Developed as an individual practical lab to practice core React concepts.
 
-Currently, two official plugins are available:
+## 🎬 Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Light Mode](./screenshots/light.png)
+![Dark Mode](./screenshots/dark.png)
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Header & Navbar:** reusable components with navigation links
+- **Student Cards:** display student info using props
+- **Course List:** rendered dynamically with `map()` and unique keys
+- **Registration Form:** controlled inputs with validation
+- **Live Search:** filter students by name
+- **Theme Toggle:** switch between light and dark mode using `useState`
+- **Login/Logout:** conditional rendering of messages and the registration form
+- **Footer:** reusable footer component
 
-## Expanding the Oxlint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- React (Hooks)
+- JSX
+- Vite
+- CSS3
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Header.jsx
+│   ├── Navbar.jsx
+│   ├── StudentCard.jsx
+│   ├── CourseList.jsx
+│   ├── RegistrationForm.jsx
+│   ├── SearchBar.jsx
+│   └── Footer.jsx
+├── App.jsx
+├── App.css
+└── main.jsx
+```
+
+## 📚 React Concepts Covered
+
+| Concept | Where used |
+|---|---|
+| Props | Header, StudentCard, CourseList, RegistrationForm |
+| State (`useState`) | Theme, login status, students, search, form data |
+| Event Handling | onClick, onChange, onSubmit |
+| List Rendering + Keys | Navbar, students, courses |
+| Conditional Rendering | Login message, registration form, empty search result |
+| Lifting State Up | Adding students from the form to the App |
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone https://github.com/YOUR-USERNAME/student-dashboard.git
+
+# Go to the project folder
+cd student-dashboard
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+Open `http://localhost:5173` in your browser.
+
+## 🔮 Future Improvements
+
+- Edit and delete students
+- Backend integration (Node.js + MongoDB)
+- Form validation messages
+- Persist data with localStorage
+
